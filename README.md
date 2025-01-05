@@ -1,9 +1,10 @@
-# The Cookie Factory Lab
-Welcome to the Cookie Factory Lab! This is a JavaFX Application created by Trent Adamson, Grant Fisco & Salvin Chowdhury
+# The Cookie Factory Lab Project
+Welcome to the Cookie Factory Application! This repostiory is a design patterns project that I've worked on with [Trent Adamson](https://www.linkedin.com/in/trent-adamson-6a8351293/) & [Grant Fisco](https://www.linkedin.com/in/grantfiscocs/) during my sophomore year at the Milwaukee School of Engineering!
 
-## Instructions
-Welcome to the Cookie Factory Program! Below are the instructions you need to follow:
+## Lab Instructions
+Welcome to the Cookie Factory Program! The goal of creating this program is to demonstrate the advantage of the factory pattern. This is a GUI program where different types of cookies are created by a factory and then transported by different forms of transportation to cookie stores. 
 
+## Guide to Program:
 1. **Create Factories**: Use the drop-down menu to create factories that will produce your cookies.
 2. **Unlock Transportation**: Once your costs fall below $1000, press the right key to unlock transportation options.
 3. **Create Transportation**: You can create various modes of transportation, such as planes, boats, or trucks, to transport 
