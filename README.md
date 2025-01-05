@@ -1,7 +1,3 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/b3eRA-Dd)
-# lab10
-
-
 # The Cookie Factory Lab
 Welcome to the Cookie Factory Lab! This is a JavaFX Application created by Trent Adamson, Grant Fisco & Salvin Chowdhury
 
