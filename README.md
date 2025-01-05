@@ -4,7 +4,7 @@ Welcome to the Cookie Factory Application! This repostiory is a design patterns 
 ## Lab Instructions
 Welcome to the Cookie Factory Program! The goal of creating this program is to demonstrate the advantage of the factory pattern. This is a GUI program where different types of cookies are created by a factory and then transported by different forms of transportation to cookie stores. 
 
-## Guide to Program:
+## Program Guide
 1. **Create Factories**: Use the drop-down menu to create factories that will produce your cookies.
 2. **Unlock Transportation**: Once your costs fall below $1000, press the right key to unlock transportation options.
 3. **Create Transportation**: You can create various modes of transportation, such as planes, boats, or trucks, to transport 
