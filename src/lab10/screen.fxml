@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane fx:id="theGrid" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#onKeyPressed" prefHeight="541.0" prefWidth="774.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lab10.GameController">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <ImageView fitHeight="74.0" fitWidth="76.0" layoutX="630.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+         <image>
+            <Image url="@images/shop.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="85.0" fitWidth="73.0" layoutX="10.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+         <image>
+            <Image url="@images/shop.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="76.0" fitWidth="87.0" layoutX="10.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3">
+         <image>
+            <Image url="@images/shop.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="71.0" fitWidth="75.0" layoutX="10.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/shop.png" />
+         </image>
+      </ImageView>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="4" GridPane.rowIndex="1">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <ChoiceBox fx:id="logisticsDropDown" focusTraversable="false" prefWidth="150.0" />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="4" GridPane.rowIndex="2">
+         <children>
+            <ChoiceBox fx:id="factoryDropDown" focusTraversable="false" prefWidth="150.0" />
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="4">
+         <children>
+            <Label fx:id="moneyLabel" focusTraversable="false" prefHeight="54.0" prefWidth="83.0" text="\$0 ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="timeStep" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" text="Time Step" />
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="4" GridPane.rowIndex="3">
+         <children>
+            <Button fx:id="buildDisButton" focusTraversable="false" mnemonicParsing="false" onAction="#buildDis" text="Build Distribution ($500)" />
+            <Button fx:id="buildFacButton" focusTraversable="false" mnemonicParsing="false" onAction="#buildFac" text="Build Factory ($1000)" />
+         </children>
+      </VBox>
+      <Pane fx:id="transportPane1" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1" />
+      <Pane fx:id="transportPane2" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Pane fx:id="transportPane3" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      <Pane fx:id="transportPane4" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+      <Text fx:id="ChocolateStoreText" strokeType="OUTSIDE" strokeWidth="0.0" text="Chocolate: " wrappingWidth="118.62618637084961" GridPane.valignment="TOP" />
+      <Text fx:id="ThinMintStoreText" strokeType="OUTSIDE" strokeWidth="0.0" text="Thin Mint:" wrappingWidth="118.62618637084961" GridPane.columnIndex="1" GridPane.valignment="TOP" />
+      <Text fx:id="PeanutButterStoreText" strokeType="OUTSIDE" strokeWidth="0.0" text="Peanut Butter:" wrappingWidth="118.62618637084961" GridPane.columnIndex="2" GridPane.valignment="TOP" />
+      <Text fx:id="MnMStoreText" strokeType="OUTSIDE" strokeWidth="0.0" text="MnM:" wrappingWidth="118.62618637084961" GridPane.columnIndex="3" GridPane.valignment="TOP" />
+      <Text fx:id="BadChocolateCookie" strokeType="OUTSIDE" strokeWidth="0.0" text="Loss: " wrappingWidth="82.06795883178711" GridPane.valignment="BOTTOM" />
+      <Text fx:id="BadThinMintCookie" strokeType="OUTSIDE" strokeWidth="0.0" text="Loss: " wrappingWidth="82.06795883178711" GridPane.columnIndex="1" GridPane.valignment="BOTTOM" />
+      <Text fx:id="BadPeanutButterCookie" strokeType="OUTSIDE" strokeWidth="0.0" text="Loss: " wrappingWidth="82.06795883178711" GridPane.columnIndex="2" GridPane.valignment="BOTTOM" />
+      <Text fx:id="BadMnMCookie" strokeType="OUTSIDE" strokeWidth="0.0" text="Loss: " wrappingWidth="82.06795883178711" GridPane.columnIndex="3" GridPane.valignment="BOTTOM" />
+      <Text fx:id="ErrorMessage" strokeType="OUTSIDE" strokeWidth="0.0" text="Error Message: " wrappingWidth="148.4679298400879" GridPane.columnIndex="3" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
+   </children>
+</GridPane>
