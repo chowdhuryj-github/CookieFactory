@@ -1,3 +1,7 @@
+
+![Bucks](assets/banners.gif)
+
+
 # The Cookie Factory Lab Project
 Welcome to the Cookie Factory Application! This repostiory is a design patterns project that I've worked on with [Trent Adamson](https://www.linkedin.com/in/trent-adamson-6a8351293/) & [Grant Fisco](https://www.linkedin.com/in/grantfiscocs/) during my sophomore year at the Milwaukee School of Engineering!
 
